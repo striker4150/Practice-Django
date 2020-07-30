@@ -130,3 +130,6 @@ dmypy.json
 
 # Commit staging
 commit-staging.txt
+
+# SSL
+**/ssl/*

@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install -r requirements.txt --no-cache-dir
+RUN chmod +x docker-entrypoint.sh && pip install -r requirements.txt --no-cache-dir
 
 EXPOSE 8000
 CMD ["/app/docker-entrypoint.sh"]
